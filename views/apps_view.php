@@ -20,6 +20,10 @@
         <!--JavaScript at end of body for optimized loading-->
         <script type="text/javascript" src="js/materialize.min.js"></script>
 
+        <?php require("./views/hedder_view.php"); ?>
+
+        <BR>
+        
         <!-- 投稿ボタン -->
         <a class="btn-floating btn-large waves-effect waves-light red" href="#"><i class="fas fa-utensils"></i></a>
     </body>
