@@ -37,8 +37,8 @@
       予算<input type="text" name="money" value="" size="5">円まで　
       <input type="checkbox" name="koriyama" value="" >郡山<br>
       <br>
-      私は<textarea name="cuisine" rows="1" cols="10">料理名</textarea>
+      私は<textarea name="cuisine" rows="1" cols="10"　placeholder="ラーメン"></textarea>
       を食べました。<br>
-      <textarea name="kanso" rows="7" cols="100">任意</textarea>
+      <textarea name="kanso" rows="7" cols="100" placeholder="任意"></textarea>
 
 </html>
