@@ -87,7 +87,7 @@ header {
     max-width: 330px;
     /*最大幅（調整してください）*/
     height: 100%;
-    background: rgba(255, 255, 255, 0.87);
+    background: rgba(255, 255, 255, 0.95);
     /*背景色*/
     transition: .3s ease-in-out;
     /*滑らかに表示*/
