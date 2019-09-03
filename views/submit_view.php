@@ -20,24 +20,11 @@
         <option value="ラーメン">ラーメン</option>
       </select>
 
-      <select name="prefecture" required>
-        <option value="">都道府県</option>
-        <option value="北海道">北海道</option>
-        <option value="青森県">青森県</option>
-        <option value="岩手県">岩手県</option>
-      </select>
-
-      <select name="city" required>
-        <option value="">市町村</option>
-        <option value="test1市">test1市</option>
-        <option value="test2市">test2市</option>
-        <option value="test3市">test3市</option>
-      </select>
       <br>
       <br>
       予算<input type="text" name="money" value="" size="5">円まで　
-      <input type="checkbox" name="koriyama" value="" >郡山<br>
-      <br>
+      <input type="radio" name="koriyama" value="" >郡山
+      <input type="radio" name="koriyama" value="" >郡山以外<br><br>
       私は<textarea name="cuisine" rows="1" cols="10"　placeholder="ラーメン"></textarea>
       を食べました。<br>
       <textarea name="kanso" rows="7" cols="100" placeholder="任意"></textarea>
