@@ -8,7 +8,8 @@
   </head>
 
   <body>
-    <h1>ようこそ！！！</h1>
+
+  <h1>新規投稿画面</h1>
 
     <div class="right">
       店名:<input type="text" name="shop" value="" size="50"><br><br>
@@ -40,5 +41,7 @@
       私は<textarea name="cuisine" rows="1" cols="10"　placeholder="ラーメン"></textarea>
       を食べました。<br>
       <textarea name="kanso" rows="7" cols="100" placeholder="任意"></textarea>
+      <br>
+      <input type="button" value="投稿" onclick=""><br>
 
 </html>
