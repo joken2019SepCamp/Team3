@@ -2,8 +2,8 @@
     <?php require('./views/nav_menu.php'); ?>
     <table border="0" style="">
         <tr>
-            <td><i class="fas fa-star fa-2x"></i><br><a href="#">お気に入り</a></td>
-            <td><i class="fas fa-search"></i><br><a href="./search.php">検索</a></td>
+            <td><a href="#"><i class="fas fa-star fa-2x"></i><br>お気に入り</a></td>
+            <td><a href="./search.php"><i class="fas fa-search fa-2x"></i><br>検索</a></td>
             <td><?php echo html_escape($member['name']); ?></td>
             <td><a href="./logout.php">ログアウト</a></td>
         </tr>
