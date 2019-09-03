@@ -11,13 +11,15 @@
     <h1>ようこそ！！！</h1>
 
     <div class="right">
-      ※すべて必須項目です。<br>
-      学籍番号:<input type="text" name="student_num" value=""><br>
-      パスワード：<input type="text" name="password" value=""><br>
-      パスワード(確認用):<input type="text" name="password_check" value=""><br>
-      <br>
-      <input type="button" value="プロフィール画像" onclick="">
-      <input type="button" value="登録" onclick=""><br>
+      <form action="signup.php" method="POST">
+        ※すべて必須項目です。<br>
+        学籍番号:<input type="text" name="student_number"><?php echo $errs['student_number']; ?><br>
+        ユーザーネーム:<input type="text" name="name"> <?php echo $errs['name']; ?><br>
+        パスワード：<input type="password" name="password"><?php echo $errs['password']; ?><br>
+        <br>
+        <!-- <input type="button" value="プロフィール画像" onclick=""> -->
+        <input type="submit" value="登録"><br>
+      </form>
     </div>
 
   </body>
