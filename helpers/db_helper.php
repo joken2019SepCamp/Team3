@@ -68,24 +68,37 @@ function select_member($dbh, $student_number, $password){
     }
 }
 
-function post_store(){
+function post_store($dbh){
     if(isset($_FILES['img'])){
         $img = $_FILES['img'];
-        var_dump($img);
         $err = array();
         $type =exif_imagetype($img['tmp_name']);
         if($type !== IMAGETYPE_JPEG && $type !== IMAGETYPE_PNG){
             $err['pic'] = '対象ファイルはjpgまたはpngのみです。';
+
         }elseif($img['size'] > 10240000){
             $err['pic'] = 'ファイルサイズは10MB以下にしてください！';
+
         }else{
             $extension = pathinfo($img['name'], PATHINFO_EXTENSION);
             $new_img = md5(uniqid(mt_rand(), true)).'.'.$extension;
-            var_dump(move_uploaded_file($img['tmp_name'], './IMG/'.$new_img));
+            move_uploaded_file($img['tmp_name'], './IMG/'.$new_img);
         }
+        $img_path = "./IMG/".$new_img;
+    }
+    
+    $date = date('Y-m-d H:i:s');
+    if($_POST['is_koriyama_true'] === "on"){
+        $is_koriyama = TRUE;
+    }else{
+        $is_koriyama = FALSE;
     }
 
-    
+    $store_name = $_POST['store_name'];
 
-    // $sql = "INSERT ";
+    $discription = "私は、".$_POST['cuisine']."を食べました。<BR>".$_POST['kanso'];
+    $sql = "INSERT INTO data (img_path, store_name, contributor, date, genre, is_koriyama, discription) VALUE ('{$img_path}', '{$store_name}', '{$_SESSION['member']['id']}', '{$date}', '{$_POST['genre']}', '{$is_koriyama}', '{$discription}')";
+    $stmt = $dbh->prepare($sql);
+
+    $stmt->execute();
 }

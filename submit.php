@@ -21,6 +21,8 @@ $thread = $dbh -> query($sql);
 $genre = $thread -> fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($_POST)){
-    post_store();
+    post_store($dbh);
 }
+
+var_dump($_POST);
 include_once('./views/submit_view.php');
