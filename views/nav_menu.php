@@ -21,7 +21,7 @@
         <a class="nv_Link" href="./apps.php"> <i class="fas fa-home"></i> ホームに戻る </a>
         <BR>
         <p class="nv_cts1"><i class="fas fa-user-circle"></i> アカウント</p>
-        <a class="nv_Link1" href="#"> <i class="fas fa-user-cog"></i> アカウント設定 </a>
+        <a class="nv_Link1" href="./settings.php"> <i class="fas fa-user-cog"></i> アカウント設定 </a>
         <a class="nv_Link1" href="./logout.php"> <i class="fas fa-sign-out-alt"></i> ログアウト </a>
         <BR>
         
