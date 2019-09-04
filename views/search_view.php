@@ -24,7 +24,7 @@
         <?php require("./views/hedder_view.php"); ?>
         <form action="" method="post">
             <table border="0" style="width:75%; margin:auto;">
-
+=======
         <form action="" method="post">
             <table border="0">
                 <div>
@@ -41,10 +41,10 @@
                     <center>
                         <label>料理のジャンル</label>
                         <select class="browser-default" style="width:75%;">
-                            <option value="" disabled selected>選択してください</option>
-                            <option value="1">肉類</option>
-                            <option value="2">魚類</option>
-                            <option value="3">ラーメン</option>
+                        <option value="" disabled selected>選択してください</option>
+                        <?php foreach($genre as $row){?>
+                        <option value="<?php echo $row['id']; ?>"><?php echo $row['genre']; ?></option>
+                        <?php } ?>
                         </select>
                     </center>
 

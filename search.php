@@ -14,4 +14,9 @@ $member = $_SESSION['member'];  // クライアントの会員データを取得
 $dbh = get_db_connect();
 $members = array();
 
+// データベースからジャンルデータを取得
+$sql = "SELECT * FROM genre";
+$thread = $dbh -> query($sql);
+$genre = $thread -> fetchAll(PDO::FETCH_ASSOC);
+
 include_once('./views/search_view.php');

@@ -27,33 +27,17 @@
 
     <div class="contents">
     <h1>新規投稿画面</h1>
-<!-- <<<<<<< Updated upstream -->
+
     <form action="submit.php" method="post" enctype="multipart/form-data">
       店名:<input type="text" name="shop" value="" size="50"><br><br>
-      <!-- <a class="dropdown-trigger btn" href="#" data-taeget="cuisine">料理のジャンル</a>
-      <ul id="cuisine" class="dropdown-content">
-        <li><a href="#!">肉類</a></li>
-        <li><a href="#!">魚類</a></li>
-        <li><a href="#!">ラーメン</a></li>
-      </ul> -->
 
       <label>料理のジャンル</label>
       <select class="browser-default">
           <option value="" disabled selected>選択してください</option>
-          <option value="1">肉類</option>
-          <option value="2">魚類</option>
-          <option value="3">ラーメン</option>
+          <?php foreach($genre as $row){?>
+          <option value="<?php echo $row['id']; ?>"><?php echo $row['genre']; ?></option>
+          <?php } ?>
       </select>
-<!-- =======
-      <form action="pic_receive.php"  method="post" enctype="multipart/form-date">
-        店名:<input type="text" name="shop" value="" size="50"><br><br>
-        <select name="genre" required>
-          <option value="">料理のジャンル</option>
-          <option value="肉類">肉類</option>
-          <option value="魚類">魚類</option>
-          <option value="ラーメン">ラーメン</option>
-        </select>
->>>>>>> Stashed changes -->
 
         <br>
         <p>お店の写真：<input type="file" name="img"></p>
