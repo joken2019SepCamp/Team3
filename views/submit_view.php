@@ -59,7 +59,7 @@
         を食べました。<br>
         <textarea name="kanso" rows="7" cols="100" placeholder="任意"></textarea>
         <br>
-        <input type="submit" value="投稿" onclick="" class="button"><br>
+        <input type="submit" value="投稿"><br>
       </form>
     </div>
 </html>

@@ -68,30 +68,6 @@ function select_member($dbh, $student_number, $password){
     }
 }
 
-// 削除パスが正しいか検証し、正しければ削除実行
-function delete_pass($dbh, $delete_id, $del_pass){
-
-    $sql = 'SELECT * FROM bbs WHERE id = :id LIMIT 1'; // IDが一致するデータを取得する
-    $stmt = $dbh->prepare($sql);
-    $stmt->bindValue(':id', $delete_id, PDO::PARAM_INT);    // :idを$delete_idに置換え
-    $stmt->execute();
-    if($stmt->rowCount() > 0){
-        $data = $stmt->fetch(PDO::FETCH_ASSOC);
-        if(password_verify($del_pass, $data['delete_pass'])){
-            // パスワードを検証する
-
-            // return $data;   // 会員データを渡す
-
-            // 正しければ削除を実行
-            $sql = 'DELETE FROM bbs WHERE id = :id';
-            $stmt = $dbh->prepare($sql);
-            $stmt->bindValue(':id', $delete_id, PDO::PARAM_INT);
-            $stmt->execute();
-            
-            return TRUE;    // TRUEを返す
-        }else{
-            return FALSE;
-        }
-        return FALSE;
-    }
+function post($parameter){
+    $sql = "INSERT ";
 }
