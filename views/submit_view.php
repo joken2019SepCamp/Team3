@@ -20,19 +20,32 @@
   </head>
 
   <body>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="JS/materialize.min.js"></script>
+
     <?php require("./views/hedder_view.php"); ?>
 
-    <h1>新規投稿画面</h1>
-
     <div class="contents">
+    <h1>新規投稿画面</h1>
 <!-- <<<<<<< Updated upstream -->
+    <form action="submit.php" method="post" enctype="multipart/form-data">
       店名:<input type="text" name="shop" value="" size="50"><br><br>
-      <a class="dropdown-trigger btn" href="#" data-taeget="cuisine">料理のジャンル</a>
+      <!-- <a class="dropdown-trigger btn" href="#" data-taeget="cuisine">料理のジャンル</a>
       <ul id="cuisine" class="dropdown-content">
         <li><a href="#!">肉類</a></li>
         <li><a href="#!">魚類</a></li>
         <li><a href="#!">ラーメン</a></li>
-      </ul>
+      </ul> -->
+
+      <div class="browser-default">
+        <select>
+          <option value="" disabled selected>選択してください</option>
+          <option value="1">肉類</option>
+          <option value="2">魚類</option>
+          <option value="3">ラーメン</option>
+        </select>
+        <label>料理のジャンル</label>
+      </div>
 <!-- =======
       <form action="pic_receive.php"  method="post" enctype="multipart/form-date">
         店名:<input type="text" name="shop" value="" size="50"><br><br>
@@ -48,8 +61,18 @@
         <p><input type="file" name="img"></p>
         <br>
         予算<input type="text" name="money" value="" size="5">円まで
-        <input type="radio" name="koriyama" value="" >郡山
-        <input type="radio" name="koriyama" value="" >郡山以外<br><br>
+        <p>
+          <label>
+            <input class="with-gap" name="koriyama" type="radio"  />
+            <span>郡山市内</span>
+          </label>
+          <label>
+            <input class="with-gap" name="koriyama" type="radio"  />
+            <span>郡山市外</span>
+          </label>
+        </p>
+
+    </p><br><br>
         私は<textarea name="cuisine" rows="1" cols="10" placeholder="ラーメン"></textarea>
         を食べました。<br>
         <textarea name="kanso" rows="7" cols="100" placeholder="任意"></textarea>

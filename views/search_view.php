@@ -18,7 +18,9 @@
     </head>
     
     <body>
-<<<<<<< Updated upstream
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="JS/materialize.min.js"></script>
+
         <?php require("./views/hedder_view.php"); ?>
         <form action="" method="post">
             <table border="0" style="width:75%; margin:auto;">
@@ -27,28 +29,40 @@
             <table border="0">
 >>>>>>> Stashed changes
                 <div>
-                    <select name="genre" required>
-                        <option value="">料理のジャンル</option>
-                        <option value="肉類">肉類</option>
-                        <option value="魚類">魚類</option>
-                        <option value="ラーメン">ラーメン</option>
-                    </select>
+                    <!-- <div class="browser-default">
+                        <select>
+                            <option value="" disabled selected>選択してください</option>
+                            <option value="1">肉類</option>
+                            <option value="2">魚類</option>
+                            <option value="3">ラーメン</option>
+                        </select>
+                        <label>料理のジャンル</label>
+                    </div> -->
+
+                    <center>
+                        <label>料理のジャンル</label>
+                        <select class="browser-default" style="width:75%;">
+                            <option value="" disabled selected>選択してください</option>
+                            <option value="1">肉類</option>
+                            <option value="2">魚類</option>
+                            <option value="3">ラーメン</option>
+                        </select>
+                    </center>
+
                     <tr>
-                        <td align="right"><b> 場所：</b></td>
-                        <td>
-                            <p>
-                                <label>
-                                    <input type="radio" name="place" value="">
-                                    <span>郡山市内</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input type="radio" name="place" value="">
-                                    <span>郡山市外</span>
-                                </label>
-                            </p>
-                        </td>
+                    <td align="right"><b> 場所：</b></td>
+                    <td>
+                    <p>
+                        <label>
+                            <input class="with-gap" name="koriyama" type="radio"  />
+                            <span>郡山市内</span>
+                        </label>
+                        <label>
+                            <input class="with-gap" name="koriyama" type="radio"  />
+                            <span>郡山市外</span>
+                        </label>
+                    </p>
+
                     </tr>
                     <tr>
                         <td align="right"><b> 予算上限：</b></td>
@@ -58,7 +72,9 @@
         </table>
         </form>
         <p>
-            <input type="submit" value="検索">
+            <center>
+                <input type="submit" value="検索">
+            </center>
         </p>
     </body>
 </html>

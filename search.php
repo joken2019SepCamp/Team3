@@ -10,5 +10,8 @@ if(empty($_SESSION['member'])){
     header('Location: '.SITE_URL.'login.php');
     exit;
 }
+$member = $_SESSION['member'];  // クライアントの会員データを取得
+$dbh = get_db_connect();
+$members = array();
 
 include_once('./views/search_view.php');
