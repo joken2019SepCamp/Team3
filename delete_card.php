@@ -13,13 +13,12 @@ if(empty($_SESSION['member'])){
 
 $member = $_SESSION['member'];  // クライアントの会員データを取得
 $dbh = get_db_connect();
+$members = array();
 
-//掲示板の削除を行う
-if(!empty($_POST['card_id'])){
-    $card_id = $_POST['card_id'];
-    var_dump($card_id);
+// ここに処理を追加していく
+$card_id = $_POST['card_id'];
+// var_dump($_POST);
 
-    $sql = "DELETE FROM data WHERE id = '{$card_id}'";
-    $dbh -> exec($sql);
-    // header('Location: '.SITE_URL.'apps.php');
-}
+$sql = "DELETE FROM data WHERE id = '{$card_id}'";
+$dbh->query($sql);
+header('Location: '.SITE_URL.'apps.php');
