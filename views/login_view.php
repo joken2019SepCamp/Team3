@@ -22,7 +22,7 @@
         <script type="text/javascript" src="JS/materialize.min.js"></script>
 
         <div class="contents">
-            <h1>おかえりなさい</h1>
+            <h3>おかえりなさい</h3>
             <form action="" method="post">
                 <table border="0" style="width:75%; text-align:center;">
                     <tr border="0">

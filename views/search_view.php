@@ -21,6 +21,7 @@
         <!--JavaScript at end of body for optimized loading-->
         <script type="text/javascript" src="JS/materialize.min.js"></script>
 
+        <h3>お店の検索</h3>
         <?php require("./views/hedder_view.php"); ?>
         <form action="" method="post">
             <table border="0" style="width:75%; margin:auto;">
@@ -72,7 +73,7 @@
         </form>
         <p>
             <center>
-                <input type="submit" value="検索">
+                <input type="submit" value="検索" class="button">
             </center>
         </p>
     </body>

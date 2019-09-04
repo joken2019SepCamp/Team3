@@ -25,7 +25,7 @@
     <?php require("./views/hedder_view.php"); ?>
 
     <div class="contents">
-      <h1>ようこそ！！！</h1>
+      <h3>ようこそ！！！</h3>
       <form action="signup.php" method="POST">
         ※すべて必須項目です。<br>
         学籍番号:<input type="text" name="student_number"><?php echo $errs['student_number']; ?><br>

@@ -26,7 +26,7 @@
     <?php require("./views/hedder_view.php"); ?>
 
     <div class="contents">
-    <h1>新規投稿画面</h1>
+    <h3>新規投稿画面</h3>
 
     <form action="submit.php" method="post" enctype="multipart/form-data">
       店名:<input type="text" name="shop" value="" size="50"><br><br>
@@ -59,7 +59,7 @@
         を食べました。<br>
         <textarea name="kanso" rows="7" cols="100" placeholder="任意"></textarea>
         <br>
-        <input type="submit" value="投稿" onclick=""><br>
+        <input type="submit" value="投稿" onclick="" class="button"><br>
       </form>
     </div>
 </html>
