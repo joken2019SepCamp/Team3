@@ -21,7 +21,6 @@
         <!--JavaScript at end of body for optimized loading-->
         <script type="text/javascript" src="JS/materialize.min.js"></script>
 
-        <h3>お店の検索</h3>
         <?php require("./views/hedder_view.php"); ?>
         <form action="" method="post">
             <table border="0" style="width:75%; margin:auto;">
@@ -37,7 +36,7 @@
                         </select>
                         <label>料理のジャンル</label>
                     </div> -->
-
+                    <h3>お店の検索<h3>
                     <center>
                         <label>料理のジャンル</label>
                         <select class="browser-default" style="width:75%;">
