@@ -14,7 +14,7 @@
 }
 
 .info {
-    font-size: 70%;
+    font-size: 1em;
     color: rgb(200, 200, 200);
 }
 
@@ -81,4 +81,9 @@ table,
 th,
 td {
     border: none;
+}
+
+.card_text {
+    font-size: 1.2em;
+    padding-top: 1em;
 }
