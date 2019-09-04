@@ -29,10 +29,10 @@
     <h3>新規投稿画面</h3>
 
     <form action="submit.php" method="post" enctype="multipart/form-data">
-      店名:<input type="text" name="shop" value="" size="50"><br><br>
+      店名:<input type="text" name="store_name" value="" size="50"><br><br>
 
       <label>料理のジャンル</label>
-      <select class="browser-default">
+      <select class="browser-default" name="genre">
           <option value="" disabled selected>選択してください</option>
           <?php foreach($genre as $row){?>
           <option value="<?php echo $row['id']; ?>"><?php echo $row['genre']; ?></option>
@@ -45,11 +45,11 @@
         予算<span><input type="text" name="money" value="" size="5" style="width:15%;"></span>円まで
         <p>
           <label>
-            <input class="with-gap" name="koriyama" type="radio"  />
+            <input class="with-gap" name="is_koriyama_true" type="radio"  />
             <span>郡山市内</span>
           </label>
           <label>
-            <input class="with-gap" name="koriyama" type="radio"  />
+            <input class="with-gap" name="is_koriyama_false" type="radio"  />
             <span>郡山市外</span>
           </label>
         </p>
