@@ -18,9 +18,14 @@
     </head>
     
     <body>
+<<<<<<< Updated upstream
         <?php require("./views/hedder_view.php"); ?>
         <form action="" method="post">
             <table border="0" style="width:75%; margin:auto;">
+=======
+        <form action="" method="post">
+            <table border="0">
+>>>>>>> Stashed changes
                 <div>
                     <select name="genre" required>
                         <option value="">料理のジャンル</option>
@@ -28,11 +33,22 @@
                         <option value="魚類">魚類</option>
                         <option value="ラーメン">ラーメン</option>
                     </select>
-                <tr>
-                    <td align="right"><b> 場所：</b></td>
-                    <td>
-                        <input type="radio" name="place" value="">郡山市内
-                        <input type="radio" name="place" value="">郡山市外
+                    <tr>
+                        <td align="right"><b> 場所：</b></td>
+                        <td>
+                            <p>
+                                <label>
+                                    <input type="radio" name="place" value="">
+                                    <span>郡山市内</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="radio" name="place" value="">
+                                    <span>郡山市外</span>
+                                </label>
+                            </p>
+                        </td>
                     </tr>
                     <tr>
                         <td align="right"><b> 予算上限：</b></td>
