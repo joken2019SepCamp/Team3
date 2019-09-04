@@ -36,7 +36,7 @@
                         </select>
                         <label>料理のジャンル</label>
                     </div> -->
-                    <h3>お店の検索<h3>
+                    <h3>お店の検索</h3>
                     <center>
                         <label>料理のジャンル</label>
                         <select class="browser-default" style="width:75%;">
