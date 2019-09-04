@@ -48,6 +48,16 @@ function insert_member_data($dbh, $name, $student_number, $password){
     }
 }
 
+function update_member_name($dbh, $name, $id){
+$sql = "UPDATE members SET name='{$name}' WHERE id={$id}";
+    $stmt = $dbh->prepare($sql);
+
+    if($stmt->execute()){
+        return TRUE;
+    } else {
+        return FALSE;
+    }
+}
 // メールアドレスとパスワードが一致するか調べる
 function select_member($dbh, $student_number, $password){
 
