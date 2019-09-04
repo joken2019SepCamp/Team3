@@ -108,5 +108,5 @@ function post_store($dbh){
 
     $discription = "私は、".$_POST['cuisine']."を食べました。<BR>".$_POST['kanso'];
     $sql = "INSERT INTO data (img_path, store_name, contributor, date, genre, is_koriyama, discription) VALUE ('{$img_path}', '{$store_name}', '{$_SESSION['member']['id']}', '{$date}', '{$_POST['genre']}', '{$is_koriyama}', '{$discription}')";
-    $stmt = $dbh->query($sql);
+    $dbh -> query($sql);
 }
