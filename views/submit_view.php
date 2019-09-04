@@ -37,15 +37,13 @@
         <li><a href="#!">ラーメン</a></li>
       </ul> -->
 
-      <div class="browser-default">
-        <select>
+      <label>料理のジャンル</label>
+      <select class="browser-default">
           <option value="" disabled selected>選択してください</option>
           <option value="1">肉類</option>
           <option value="2">魚類</option>
           <option value="3">ラーメン</option>
-        </select>
-        <label>料理のジャンル</label>
-      </div>
+      </select>
 <!-- =======
       <form action="pic_receive.php"  method="post" enctype="multipart/form-date">
         店名:<input type="text" name="shop" value="" size="50"><br><br>
@@ -58,9 +56,9 @@
 >>>>>>> Stashed changes -->
 
         <br>
-        <p><input type="file" name="img"></p>
+        <p>お店の写真：<input type="file" name="img"></p>
         <br>
-        予算<input type="text" name="money" value="" size="5">円まで
+        予算<span><input type="text" name="money" value="" size="5" style="width:15%;"></span>円まで
         <p>
           <label>
             <input class="with-gap" name="koriyama" type="radio"  />
