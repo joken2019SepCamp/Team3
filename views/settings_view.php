@@ -19,13 +19,15 @@
   </head>
 
   <body>
-  <?php require("./views/hedder_view.php"); ?>
-  <h3>アカウント設定</h3>
-       <form action="#" method="POST">
-        新しいユーザーネーム:<input type="text" name="name"> <?php echo $errs['name']; ?><br>
-        <br>
-        <!-- <input type="button" value="プロフィール画像" onclick=""> -->
-        <input type="submit" class="btn waves-effect waves-light" value="保存"><br>
-      </form>
- </body>
+    <?php require("./views/hedder_view.php"); ?>
+    <div class="contents">
+      <h3>アカウント設定</h3>
+          <form action="#" method="POST">
+            新しいユーザーネーム:<input type="text" name="name"> <?php echo $errs['name']; ?><br>
+            <br>
+            <!-- <input type="button" value="プロフィール画像" onclick=""> -->
+            <input type="submit" class="btn waves-effect waves-light" value="保存"><br>
+          </form>
+    </div>
+  </body>
 </html>
