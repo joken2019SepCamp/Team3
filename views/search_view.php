@@ -28,19 +28,10 @@
             <form action="" method="post">
                 <table border="0">
                     <div>
-                        <!-- <div class="browser-default">
-                            <select>
-                                <option value="" disabled selected>選択してください</option>
-                                <option value="1">肉類</option>
-                                <option value="2">魚類</option>
-                                <option value="3">ラーメン</option>
-                            </select>
-                            <label>料理のジャンル</label>
-                        </div> -->
                         <h3>お店の検索</h3>
                         <center>
                             <label>料理のジャンル</label>
-                            <select class="browser-default" style="width:75%;">
+                            <select class="browser-default" style="width:75%;" name="genre">
                             <option value="" disabled selected>選択してください</option>
                             <?php foreach($genre as $row){?>
                             <option value="<?php echo $row['id']; ?>"><?php echo $row['genre']; ?></option>
@@ -54,28 +45,31 @@
                         <td>
                         <p>
                             <label>
-                                <input class="with-gap" name="koriyama" type="radio"  />
+                                <input class="with-gap" name="koriyama_true" type="radio"  />
                                 <span>郡山市内</span>
                             </label>
                             <label>
-                                <input class="with-gap" name="koriyama" type="radio"  />
+                                <input class="with-gap" name="koriyama_false" type="radio"  />
                                 <span>郡山市外</span>
                             </label>
                         </p>
 
                         </tr>
-                        <tr>
-                            <td align="right"><b> 予算上限：</b></td>
-                            <td><input type="text" name="budget" ></td>
-                        </tr>
                     </div>
-            </table>
+                </table>
+                <p>
+                    <center>
+                        <input type="submit" value="検索" class="button">
+                    </center>
+                </p>
             </form>
-            <p>
-                <center>
-                    <input type="submit" value="検索" class="button">
-                </center>
-            </p>
+            <BR>
+            <BR>
+            <?php
+            if(isset($html)){
+                echo $html;
+            }
+            ?>
         </div>
     </body>
 </html>

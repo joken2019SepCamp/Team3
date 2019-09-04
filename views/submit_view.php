@@ -42,7 +42,6 @@
         <br>
         <p>お店の写真：<input type="file" name="img"></p>
         <br>
-        予算<span><input type="text" name="money" value="" size="5" style="width:15%;"></span>円まで
         <p>
           <label>
             <input class="with-gap" name="is_koriyama_true" type="radio"  />

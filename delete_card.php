@@ -13,16 +13,13 @@ if(empty($_SESSION['member'])){
 
 $member = $_SESSION['member'];  // クライアントの会員データを取得
 $dbh = get_db_connect();
-$members = array();
 
-// データベースからジャンルデータを取得
-$sql = "SELECT * FROM genre";
-$thread = $dbh -> query($sql);
-$genre = $thread -> fetchAll(PDO::FETCH_ASSOC);
+//掲示板の削除を行う
+if(!empty($_POST['card_id'])){
+    $card_id = $_POST['card_id'];
+    var_dump($card_id);
 
-if(!empty($_POST)){
-    post_store($dbh);
+    $sql = "DELETE FROM data WHERE id = '{$card_id}'";
+    $dbh -> exec($sql);
+    // header('Location: '.SITE_URL.'apps.php');
 }
-
-// var_dump($_POST);
-include_once('./views/submit_view.php');

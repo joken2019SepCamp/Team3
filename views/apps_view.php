@@ -29,46 +29,13 @@
         <?php require("./views/hedder_view.php"); ?>
 
         <div class="contents">
-          <div class="col s12 m7">
-            <h3>評価の高いお店</h3>
-            <div class="card horizontal">
-              <div class="card-image">
-                <img class="img_card" src="https://tabiiro.jp/lpimg/gourmet/308287/main/img1.jpg">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <h4>1 - ガスト安積店</h4>
-                  <div class="info">
-                    カズ之助  2019/09/03  ファミリーレストラン
-                  </div>
+            <div class="col s12 m7">
+                <h3>評価の高いお店</h3>
 
-                </div>
-                <div class="card-action">
-                  <a href="#"><i class="fas fa-thumbs-up"></i> いいね!</a>
-                </div>
-              </div>
-            </div>
-          </div>
+                <?php echo $html; ?>
 
-          <div class="card horizontal">
-            <div class="card-image">
-              <img class="img_card" src="https://tabiiro.jp/lpimg/gourmet/308287/main/img1.jpg">
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <h4>2 - ガスト安積店</h4>
-                <div class="info">
-                  カズ之助  2019/09/03  ファミリーレストラン
-                </div>
 
-              </div>
-              <div class="card-action">
-                <a href="#"><i class="fas fa-thumbs-up"></i> いいね!</a>
-              </div>
-            </div>
-          </div>
-
-                
+            </div>     
         </div>
     </body>
 </html>
