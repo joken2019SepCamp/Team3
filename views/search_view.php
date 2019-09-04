@@ -24,6 +24,10 @@
         <?php require("./views/hedder_view.php"); ?>
         <form action="" method="post">
             <table border="0" style="width:75%; margin:auto;">
+=======
+        <form action="" method="post">
+            <table border="0">
+>>>>>>> Stashed changes
                 <div>
                     <!-- <div class="browser-default">
                         <select>
