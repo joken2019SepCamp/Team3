@@ -20,4 +20,7 @@ $sql = "SELECT * FROM genre";
 $thread = $dbh -> query($sql);
 $genre = $thread -> fetchAll(PDO::FETCH_ASSOC);
 
+if(isset($_POST)){
+    post_store();
+}
 include_once('./views/submit_view.php');

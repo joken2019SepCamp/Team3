@@ -68,6 +68,24 @@ function select_member($dbh, $student_number, $password){
     }
 }
 
-function post($parameter){
-    $sql = "INSERT ";
+function post_store(){
+    if(isset($_FILES['img'])){
+        $img = $_FILES['img'];
+        var_dump($img);
+        $err = array();
+        $type =exif_imagetype($img['tmp_name']);
+        if($type !== IMAGETYPE_JPEG && $type !== IMAGETYPE_PNG){
+            $err['pic'] = '対象ファイルはjpgまたはpngのみです。';
+        }elseif($img['size'] > 10240000){
+            $err['pic'] = 'ファイルサイズは10MB以下にしてください！';
+        }else{
+            $extension = pathinfo($img['name'], PATHINFO_EXTENSION);
+            $new_img = md5(uniqid(mt_rand(), true)).'.'.$extension;
+            var_dump(move_uploaded_file($img['tmp_name'], './IMG/'.$new_img));
+        }
+    }
+
+    
+
+    // $sql = "INSERT ";
 }
