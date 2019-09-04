@@ -16,7 +16,7 @@
 
         <p class="nv_cts0"><i class="fas fa-utensils"></i> 食べる</p>
         <a class="nv_Link" href="./search.php"> <i class="fas fa-search"></i> 検索 </a>
-        <a class="nv_Link" href="./submit.php"> <i class="fas fa-paper-plane"></i> 投稿 </a>
+        <a class="nv_Link" href="./submit.php"> <i class="fas fa-paper-plane"></i> 新規投稿 </a>
         <a class="nv_Link" href="#"> <i class="fas fa-star"></i> お気に入り </a>
         <BR>
         <p class="nv_cts1"><i class="fas fa-user-circle"></i> アカウント</p>

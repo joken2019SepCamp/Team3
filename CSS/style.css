@@ -8,7 +8,77 @@
 .contents {
     width: 90%;
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
     margin-left: auto;
     margin-right: auto;
+}
+
+.info {
+    font-size: 70%;
+    color: rgb(200, 200, 200);
+}
+
+.logout_btn {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
+}
+
+.logout_btn:hover {
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+header {
+    position: relative;
+    /* ヘッダーを固定する */
+    top: 0;
+    /* 上部から配置の基準位置を決める */
+    left: 0;
+    /* 左から配置の基準位置を決める */
+    width: 100%;
+    /* ヘッダーの横幅を指定する */
+    height: 9em;
+    /* ヘッダーの高さを指定する */
+    padding: 10px;
+    /* ヘッダーの余白を指定する(上下左右) */
+    background-color: #eea631;
+    /* ヘッダーの背景色を指定する */
+    color: #ffffff;
+    /* フォントの色を指定する */
+}
+
+.header_lnk {
+    color: white;
+    text-align: center;
+}
+
+.user_name {
+    font-weight: bold;
+    font-size: 24pt;
+}
+
+.card.horizontal {
+    height: 20em;
+}
+
+.card-image {
+    height: 20em;
+    width: 20em;
+    /* object-fit: cover; */
+}
+
+.img_card {
+    height: 20em;
+    width: 20em;
+    object-fit: cover;
+}
+
+table,
+th,
+td {
+    border: none;
 }

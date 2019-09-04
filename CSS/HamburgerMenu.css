@@ -1,11 +1,11 @@
-header {
+/* header {
     padding: 10px;
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     background-image: linear-gradient(to bottom, rgba(255, 182, 15, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
-}
+} */
 
 #nav-drawer {
     position: relative;

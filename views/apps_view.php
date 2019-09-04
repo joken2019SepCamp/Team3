@@ -29,42 +29,45 @@
         <?php require("./views/hedder_view.php"); ?>
 
         <div class="contents">
-            <div class="col s12 m7">
-            <h2 class="header">おすすめのお店</h2>
-            <div class="card horizontal">
-              <div class="card-image">
-                <img src="https://tabiiro.jp/lpimg/gourmet/308287/main/img1.jpg">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <p>初めてこんなにおいしいものを食べました。値段も安くお勧めです。</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">店舗のリンク</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-      
-                
-
           <div class="col s12 m7">
-            <h2 class="header">食べたもの</h2>
+            <h3>評価の高いお店</h3>
             <div class="card horizontal">
               <div class="card-image">
-                <img src="https://shop.r10s.jp/otoshuclub/cabinet/item8/8200097_r2.jpg">
+                <img class="img_card" src="https://tabiiro.jp/lpimg/gourmet/308287/main/img1.jpg">
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <p>これまで食べたものの中で一番おいしかったです。ぜひ食べてみてください！</p>
+                  <h4>1 - ガスト安積店</h4>
+                  <div class="info">
+                    カズ之助  2019/09/03  ファミリーレストラン
+                  </div>
+
                 </div>
                 <div class="card-action">
-                  <a href="#">店舗のリンク</a>
+                  <a href="#"><i class="fas fa-thumbs-up"></i> いいね!</a>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="card horizontal">
+            <div class="card-image">
+              <img class="img_card" src="https://tabiiro.jp/lpimg/gourmet/308287/main/img1.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <h4>2 - ガスト安積店</h4>
+                <div class="info">
+                  カズ之助  2019/09/03  ファミリーレストラン
+                </div>
+
+              </div>
+              <div class="card-action">
+                <a href="#"><i class="fas fa-thumbs-up"></i> いいね!</a>
+              </div>
+            </div>
+          </div>
+
                 
         </div>
     </body>
