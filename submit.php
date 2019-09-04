@@ -11,4 +11,8 @@ if(empty($_SESSION['member'])){
     exit;
 }
 
+$member = $_SESSION['member'];  // クライアントの会員データを取得
+$dbh = get_db_connect();
+$members = array();
+
 include_once('./views/submit_view.php');

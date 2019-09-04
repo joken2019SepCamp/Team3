@@ -19,7 +19,7 @@
     
     <body>
         <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="JS/materialize.min.js"></script>
 
         <div class="contents">
             <h1>おかえりなさい</h1>
