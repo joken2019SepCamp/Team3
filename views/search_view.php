@@ -49,7 +49,7 @@
                         </select>
                     </center>
 
-                    <!-- あああ -->
+                    
                     <tr>
                     <td align="right"><b> 場所：</b></td>
                     <td>
