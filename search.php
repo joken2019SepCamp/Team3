@@ -27,7 +27,7 @@ if(!empty($_POST)){
         $is_koriyama = TRUE;
     }
     // ポストデータが存在した(検索を実行した)場合
-    $sql = "SELECT * FROM data WHERE (genre = '{$genre}') AND (is_koriyama = '{is_koriyama}') ORDER BY good DESC";
+    $sql = "SELECT * FROM data WHERE (genre = '{$genre}') AND (is_koriyama = '{$is_koriyama}') ORDER BY good DESC";
     $stmt = $dbh -> query($sql);
     $list = $stmt -> fetchAll(PDO::FETCH_ASSOC);
 
