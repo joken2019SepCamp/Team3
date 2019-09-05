@@ -15,14 +15,14 @@ $dbh = get_db_connect();
 $members = array();
 
 // データベースからジャンルデータを取得
-var_dump($_POST);
+// var_dump($_POST);
 
 $sql = "SELECT * FROM genre";
 $thread = $dbh -> query($sql);
 $genre = $thread -> fetchAll(PDO::FETCH_ASSOC);
 
 if(!empty($_POST)){
-    $genre = $_POST['genre'];
+    $genre = (int)$_POST['genre'];
     if($_POST['koriyama_true'] === 'on'){
         $is_koriyama = TRUE;
     }else{
@@ -31,7 +31,7 @@ if(!empty($_POST)){
 
     var_dump($genre);
     // ポストデータが存在した(検索を実行した)場合
-    $sql = "SELECT * FROM data WHERE (genre = '{$genre}') AND (is_koriyama = '{$is_koriyama}') ORDER BY good DESC";
+    $sql = "SELECT * FROM data WHERE (genre = {$genre}) AND (is_koriyama = '{$is_koriyama}') ORDER BY good DESC";
     $stmt = $dbh -> query($sql);
     $list = $stmt -> fetchAll(PDO::FETCH_ASSOC);
 
