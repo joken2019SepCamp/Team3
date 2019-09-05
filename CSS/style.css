@@ -58,7 +58,7 @@ header {
 
 .user_name {
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 2vw !important;
 }
 
 .card.horizontal {
@@ -84,7 +84,7 @@ td {
 }
 
 .card_text {
-    font-size: 1.2vw;
+    font-size: 1.2vw !important;
     padding-top: 1em;
 }
 
@@ -93,9 +93,9 @@ table {
 }
 
 h4 {
-    font-size: 1.5vw;
+    font-size: 1.5vw !important;
 }
 
 .card-action {
-    font-size: 0.95vw;
+    font-size: 0.95vw !important;
 }
