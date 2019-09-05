@@ -15,7 +15,7 @@ $dbh = get_db_connect();
 $members = array();
 
 // データベースからジャンルデータを取得
-// var_dump($_POST);
+var_dump($_POST);
 
 $sql = "SELECT * FROM genre";
 $thread = $dbh -> query($sql);
