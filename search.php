@@ -25,7 +25,11 @@ if(!empty($_POST)){
     $genre = $_POST['genre'];
     if($_POST['koriyama_true'] === 'on'){
         $is_koriyama = TRUE;
+    }else{
+        $is_koriyama = FALSE;
     }
+
+    var_dump($genre);
     // ポストデータが存在した(検索を実行した)場合
     $sql = "SELECT * FROM data WHERE (genre = '{$genre}') AND (is_koriyama = '{$is_koriyama}') ORDER BY good DESC";
     $stmt = $dbh -> query($sql);
