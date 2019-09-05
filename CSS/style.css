@@ -14,7 +14,7 @@
 }
 
 .info {
-    font-size: 1em;
+    font-size: 0.8vw;
     color: rgb(200, 200, 200);
 }
 
@@ -84,10 +84,18 @@ td {
 }
 
 .card_text {
-    font-size: 1.2em;
+    font-size: 1.2vw;
     padding-top: 1em;
 }
 
 table {
     table-layout: fixed;
+}
+
+h4 {
+    font-size: 1.5vw;
+}
+
+.card-action {
+    font-size: 0.95vw;
 }
