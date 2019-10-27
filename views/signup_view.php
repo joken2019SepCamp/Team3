@@ -22,8 +22,6 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="JS/materialize.min.js"></script>
 
-    <?php require("./views/hedder_view.php"); ?>
-
     <div class="contents">
       <h3>ようこそ！！！</h3>
       <form action="signup.php" method="POST">

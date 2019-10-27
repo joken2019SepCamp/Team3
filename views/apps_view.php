@@ -26,7 +26,7 @@
             <a class="btn-floating btn-large waves-effect waves-light red" href="./submit.php"><i class="fas fa-utensils"></i></a>
         </div>
 
-        <?php require("./views/hedder_view.php"); ?>
+        <?php require("./views/header_view.php"); ?>
 
         <div class="contents">
             <div class="col s12 m7">
