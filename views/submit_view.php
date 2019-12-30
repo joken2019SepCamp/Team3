@@ -23,7 +23,7 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="JS/materialize.min.js"></script>
 
-    <?php require("./views/hedder_view.php"); ?>
+    <?php require("./views/header_view.php"); ?>
 
     <div class="contents">
     <h3>新規投稿画面</h3>

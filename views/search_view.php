@@ -21,7 +21,7 @@
         <!--JavaScript at end of body for optimized loading-->
         <script type="text/javascript" src="JS/materialize.min.js"></script>
 
-        <?php require("./views/hedder_view.php"); ?>
+        <?php require("./views/header_view.php"); ?>
         <div class="contents">
             <form action="" method="post">
                 <table border="0" style="width:75%; margin:auto;">
